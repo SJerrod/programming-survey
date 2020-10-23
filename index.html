@@ -12,14 +12,13 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h2>Want to know which <span class="language">Programming Language</span> is the right pick for you?</h2>
+      <h2>Which <span class="language">Programming Language</span> is the right pick for you?</h2>
       <footer>Please take the time to answer all the questions</footer>
       <blockquote>“Code is like humor. When you have to explain it, it’s bad.” – Cory House</blockquote>
     </div>
     <form id="questions">
       <div class="form-group">
-        <label for="name">Please enter your name</label>
-        <input id="name" class="form-control" type="text">
+        <input id="name" class="form-control" type="text" placeholder="**Please Enter Name**">
       </div>
       <ol>
         <li>
@@ -114,7 +113,6 @@
     </form>
     <div class="result">
       <h3>The time is here <span class="name"></span>, we have your results!</h3>
-      <button type="reset" class="btn btn-warning" onClick="reloadPage()">Reset</button>
       <div id="javascript">
         <h1>JavaScript</h1>
       </div>
@@ -130,6 +128,7 @@
       <div id="swift">
         <h1>Swift</h1>
       </div>
+      <button type="reset" class="btn btn-warning" onClick="reloadPage()">Reset</button>
     </div>
   </div>
 </body>

@@ -20,9 +20,7 @@ $(document).ready(function() {
     let content = parseInt($("input[name='content']:checked").val());
     let total = totalValue (operation, cost, think, job, content);
 
-    if ($("input[type='radio']") !== (":checked")) {
-      alert("Did you miss a question?");
-    } else if (total >=16) {
+    if (total >=16) {
       $("#swift").show();
     } else if (total >=13) {
       $("#ruby").show();
@@ -36,6 +34,8 @@ $(document).ready(function() {
 
     $(".result").show();
     $(".name").text(user);
+    $(".jumbotron").hide();
+    $("#questions").hide();
     
   });
 });
