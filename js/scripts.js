@@ -16,6 +16,20 @@ $(document).ready(function() {
     let content = parseInt($("input[name='content']:checked").val());
     let total = totalValue (operation, cost, think, job, content);
 
+  if (total >=16) {
+    $("#swift").show();
+  } else if (total >=13) {
+    $("#ruby").show();
+  } else if (total >=10) {
+    $("#python").show();
+  } else if (total >=7) {
+    $("#csharp").show();
+  } else if (total >=5) { 
+    $("#javascript").show();
+  }
+
+    $(".result").show();
     $(".name").text(user);
+    
   });
 });
