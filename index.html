@@ -17,9 +17,13 @@
       <blockquote>“Code is like humor. When you have to explain it, it’s bad.” – Cory House</blockquote>
     </div>
     <form id="questions">
+      <div class="form-group">
+        <label for="name">Please enter your name</label>
+        <input id="name" class="form-control" type="text">
+      </div>
       <ol>
         <li>
-          <p>Which operating system do you prefer?</p>
+          <h5>Which operating system do you prefer?</h5>
           <div class="form-check">
             <input type="radio" class="form-check-input" name="operation" value="1">
             <label class="form-check-label">Windows</label>
@@ -34,7 +38,7 @@
           </div>
         </li>
         <li>
-          <p>How much are you willing to spend?</p>
+          <h5>How much are you willing to spend?</h5>
           <div class="form-check">
             <input type="radio" class="form-check-input" name="cost" value="1">
             <label class="form-check-label">Lets ball on a budget</label>
@@ -53,7 +57,7 @@
           </div>
         </li>
         <li>
-          <p>Would you consider yourself a more structured or abstract thinker.</p>
+          <h5>Would you consider yourself a more structured or abstract thinker?</h5>
           <div class="form-check">
             <input type="radio" class="form-check-input" name="think" value="1">
             <label class="form-check-label">Everything has its place</label>
@@ -67,8 +71,51 @@
             <label class="form-check-label">Where we're going we dont need roads</label>
           </div>
         </li>
+        <li>
+          <h5>What are you looking to do with your programming?</h5>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="job" value="1">
+            <label class="form-check-label">Software Engineer- creating programs that make the world run</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="job" value="2">
+            <label class="form-check-label">Web Development- create stylish web pages that keep users coming back</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="job" value="3">
+            <label class="form-check-label">Game design- create content that people from all backgrounds and ages could enjoy</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="job" value="4">
+            <label class="form-check-label">Data Analytics- Record and analyze data so that process's and operations may be refined</label>
+          </div>
+        </li>
+        <li>
+          <h5>What is your favorite part of programming</h5>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="content" value="1">
+            <label class="form-check-label">The back end funtionality that makes it work</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="content" value="2">
+            <label class="form-check-label">The user interface and input easibility</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="content" value="3">
+            <label class="form-check-label">The front end styling and layout</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" name="content" value="4">
+            <label class="form-check-label">Debugging and inspecting code for any discrepancies</label>
+          </div>
+        </li>
       </ol>
+      <button type="submit" class="btn btn-primary">Submit Answers</button>
     </form>
+    <div class="result">
+      <h3>The time is here <span class="name"></span>, we have your results!</h3>
+      <button type="reset" class="btn btn-warning">Reset</button>
+    </div>
   </div>
 </body>
 </html>
