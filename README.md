@@ -26,7 +26,7 @@
 
 ## Bugs
 
-* none known
+* Javascript logo shows in VSC files and in browser host of index.html, but does not always load in live server hosted from VSC
 
 ## For support
 

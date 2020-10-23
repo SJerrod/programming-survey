@@ -19,6 +19,11 @@ $(document).ready(function() {
     let job = parseInt($("input[name='job']:checked").val());
     let content = parseInt($("input[name='content']:checked").val());
     let total = totalValue (operation, cost, think, job, content);
+    
+    if ($('li:not(:has(:radio:checked))').length) {
+      alert("Please answer all questions");
+      cancelFormSubmission();
+    }
 
     if ($("#name").val() == "") {
       alert("You must enter your Name");
