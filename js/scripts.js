@@ -20,6 +20,15 @@ $(document).ready(function() {
     let content = parseInt($("input[name='content']:checked").val());
     let total = totalValue (operation, cost, think, job, content);
 
+    if($("#name").val() == "") {
+      alert("You must enter your Name");
+    } else if ($("#name").val() !== ""){
+      $(".result").show();
+      $(".name").text(user);
+      $(".jumbotron").hide();
+      $("#questions").hide();
+    }
+
     if (total >=16) {
       $("#swift").show();
     } else if (total >=13) {
@@ -32,10 +41,5 @@ $(document).ready(function() {
       $("#javascript").show();
     }
 
-    $(".result").show();
-    $(".name").text(user);
-    $(".jumbotron").hide();
-    $("#questions").hide();
-    
   });
 });
