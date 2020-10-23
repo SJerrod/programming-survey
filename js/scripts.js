@@ -1,5 +1,7 @@
 // Business Logic
-
+function totalValue(num1, num2, num3, num4, num5) {
+  return num1 + num2 + num3 + num4 + num5;
+}
 
 // User interface Logic
 $(document).ready(function() {
@@ -7,17 +9,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     let user = $("input#name").val();
-    let operation = $("input[name='operation']:checked").val();
-    let cost = $("input[name='cost']:checked").val();
-    let think = $("input[name='think']:checked").val();
-    let job = $("input[name='job']:checked").val();
-    let content = $("input[name='content']:checked").val();
-
-    console.log(operation)
-    console.log(cost)
-    console.log(think)
-    console.log(job)
-    console.log(content)
+    let operation = parseInt($("input[name='operation']:checked").val());
+    let cost = parseInt($("input[name='cost']:checked").val());
+    let think = parseInt($("input[name='think']:checked").val());
+    let job = parseInt($("input[name='job']:checked").val());
+    let content = parseInt($("input[name='content']:checked").val());
+    let total = totalValue (operation, cost, think, job, content);
 
     $(".name").text(user);
   });
