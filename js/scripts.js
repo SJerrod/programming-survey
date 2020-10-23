@@ -20,7 +20,7 @@ $(document).ready(function() {
     let content = parseInt($("input[name='content']:checked").val());
     let total = totalValue (operation, cost, think, job, content);
 
-    if($("#name").val() == "") {
+    if ($("#name").val() == "") {
       alert("You must enter your Name");
     } else if ($("#name").val() !== ""){
       $(".result").show();
